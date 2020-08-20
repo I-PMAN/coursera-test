@@ -3,101 +3,130 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our Menu</title>
-    <style>
-/*******************Base Styling**************/
-*{
-  box-sizing: border-box;
-}
-#h1{
-  margin-bottom: 100px;
-  margin-top: 50px;
-}
+    <title>Our menu</title>
+  </head>
+  <style>
 
-.section_box{
-  position: relative;
-  box-sizing: border-box;
-  background-color: grey;
-  padding: 25px;
-  border: 1px solid black;
-  margin-left: 15px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  width: 90px;
-  min-height: 150px;
-  float: left;
+  /*******************Basic styles************/
 
-}
-
-.title_box{
-  position: absolute;
-  border: 1px solid black;
-  background-color: red;
-  top: 0;
-  right: 0px;
-  font-weight: 300;
-  font-size: 100%;
-  text-align: center;
-  padding: 6px 90px;
+  *{
+    box-sizing: border-box;
+  }
+  #h1{
+    text-align: center;
+    font-family: sans-serif;
+  }
+  #p1{
+    width: 33.33%;
+    float: left;
+  }
+  #p2{
+    width: 33.33%;
+    float: left;
+  }
+  #p3{
+    width: 33.33%;
+    float: left;
+  }
+  section{
+    position: relative;
+    background-color: gray;
+    border: 1px solid black;
+    overflow: auto;
+    margin: 10px;
+    display: block;
   }
 
+  #color1{
+    background-color: lightpink;
+  }
+  #color2{
+    background-color: red;
+  }
+  #color3{
+    background-color: purple;
+  }
+  .title{
+    font-family: sans-serif;
+    position: relative;
+    float: right;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  p{
+    margin: 0px;
+    padding: 5px;
+  }
 
-
-/********** Desktops **********/
-  @media (min-width: 992px){
-#box1,#box2,#box3{
-  width: 30%;
-}
-}
-/************** Laptops **********/
-    @media (min-width: 768px) and (max-width: 991px)   {
-#box1,#box2{
-  width: 50%;
-}
-#box3{
-  clear: both;
-  margin-right: 15px;
-  width: 100%;
-}
+  @@media (min-width: 992px){
+    #p1{
+      width: 33.33%;
+      float: left;
     }
-
-/***************Small Screens***********/
-@media(max-width: 767px){
-  #box,#box2,#box3{
-    clear: right;
-    width: 100%;
-    margin-bottom: 15px;
+    #p2{
+      width: 33.33%;
+      float: left;
+    }
+    #p3{
+      width: 33.33%;
+      float: left;
+    }
   }
-}
+  @@media (max-width: 991px) and (min-width: 768px) {
+  #p1{
+    width: 50%;
+    float: left;
+    margin-bottom: 5px;
+  }
+  #p2{
+    width: 50%;
+    float: left;
+    margin-bottom: 5px;
+  }
+  #p3{
+    width: 100%;
+  }
+  }
+  @media (max-width: 767px){
+    #p1{
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    #p2{
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #p3{
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  }
+  </style>
 
-</style>
-</head>
-<body>
-<h1 style="text-align: center" id="h1">Our Menu</h1>
-<div class="section_box" id="box1">
-<div class="title_box" id="content_title">
-  <div>Apple</div>
-</div>
-<p style=";">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-</p>
-</div>
-<div class="section_box" id="box2">
-<div class="title_box" id="content_title" style="background-color: purple">
-  <div>Grapes</div>
-</div>
-<p class="para">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-</div>
-<div class="section_box" id="box3">
-<div class="title_box" id="content_title" style="background-color: pink">
-  <div>Strawberry</div>
-</div>
-<p class="para">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-</div>
-</body>
+  <body>
+    <h1 id="h1">Our Menu</h1>
+    <div id='p1'>
+      <section>
+        <div class="title" id="color1">Strawberry</div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </section>
+    </div>
+    <div id="p2">
+      <section>
+        <div class="title" id="color2">Apple</div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </section>
+    </div>
+    <div id="p3">
+      <section>
+        <div class="title" id="color3">Grapes</div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
