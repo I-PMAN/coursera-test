@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Architects Daughter', cursive;
+}
+.navbar {
+  background-color: #D2691E;
+  border-radius: 0;
+  border: 0;
+  height: 100px;
+  border-bottom: 2px solid black;
+}
+.container{
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 {
+  color: black;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#h1{
+  text-align: center;
+  margin-top: 20px;
+}
+.section-1{
+  padding-left:10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 1050px;
+  background-color: #FF4500;
+  font-size: 1.25em;
+}
+.section-1 h1{
+  text-align: center;
+}
+.section-2{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 1050px;
+  background-color: #FFC0CB;
+  font-size: 1.25em;
+}
+.section-2 h1{
+  text-align: center;
+}
+.section-3{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 1050px;
+  background-color: #800080;
+  font-size: 1.25em;
+}
+.section-3 h1{
+  text-align: center;
+}
+.navbar-toggler{
+  background-color: inherit;
+  float: right;
+}
+.navbar-collapse{
+  width:auto;
+  background-color: #D2691E ;
+  text-align: center;
+}
+.section{
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: auto;
+  display: block;
+}
+.container1{
+  margin-left: 20px;
+  margin-right: 20px;
+}
